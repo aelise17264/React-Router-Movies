@@ -13,7 +13,7 @@ const MovieList = props => {
 
 function MovieDetails({ movie }) {
   const { title, director, metascore } = movie;
-  console.log(movie.id)
+  //console.log(movie.id)
   return (
     <div className="movie-card">
      

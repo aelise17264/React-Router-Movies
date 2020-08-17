@@ -11,13 +11,13 @@ const Movie = props => {
 //console.log(param.id)
 
   useEffect(() => {
-   let index = param.id
+   //let index = param.id
    
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 
        axios
-        .get(`http://localhost:5000/api/movies/${index}`)
+        .get(`http://localhost:5000/api/movies/${param.id}`)
         .then(response => {
           setMovie(response.data);
         })
